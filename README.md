@@ -1,6 +1,6 @@
 # CapistranoMongo
 
-TODO: Write a gem description
+Provides some capistrano recipes for MonogoDB
 
 ## Installation
 
@@ -18,7 +18,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+    $ cap db:console   # Opens a remote mongo console
+    $ cap db:down      # Sync DB from remote server to local machine
+    $ cap db:dump      # Create a dump from the remote db
 
 ## Contributing
 
