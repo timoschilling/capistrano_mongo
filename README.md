@@ -1,4 +1,4 @@
-# CapistranoMongo
+# Capistrano Mongo
 
 Provides some capistrano recipes for MonogoDB
 
