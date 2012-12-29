@@ -16,6 +16,10 @@ Or install it yourself as:
 
     $ gem install capistrano_mongo
 
+Require it in your Capfile or deploy.rb:
+
+    require "capistrano_mongo/recipes"
+
 ## Usage
 
     $ cap db:console   # Opens a remote mongo console
