@@ -1,6 +1,6 @@
 # Capistrano Mongo
 
-Provides some capistrano recipes for MonogoDB
+Provides some capistrano tasks for MonogoDB
 
 ## Installation
 
