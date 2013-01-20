@@ -10,7 +10,7 @@ module CapistranoMongo
             abort "You must set a database" unless database
             hostname = find_servers_for_task(current_task).first
 
-            exec "ssh -l #{user} #{hostname} -p #{port} -t 'cd #{current_path} && mongo #{database}'"
+            run_locally "ssh -l #{user} #{hostname} -p #{port} -t 'cd #{current_path} && mongo #{database}'"
           end
 
           desc "Create a dump from the remote db"
