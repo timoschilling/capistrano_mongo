@@ -15,7 +15,7 @@ namespace :test do
     cap = `cap -T`
     tasks = %w{db:console db:dump db:down}
     tasks.each do |task|
-      unless `cap -T` =~ /cap\ ssh/
+      unless `cap -T` =~ /cap\ #{task}/
         puts "Integration test fails!"
         exit!
       end
