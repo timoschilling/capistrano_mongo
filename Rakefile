@@ -23,3 +23,7 @@ namespace :test do
     puts "Integration test successfully!"
   end
 end
+
+desc "Run integration tests and specs"
+task :test => ["test:spec", "test:integration"]
+task :default => :test
